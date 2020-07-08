@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css">
+    <link rel="stylesheet" href="./index.scss">
+    <script defer src="https://use.fontawesome.com/releases/v5.3.1/js/all.js"></script>
+</head>
+<body>
+<div class="field">
+    <div class="file is-fullwidth is-center is-boxed is-success has-name">
+        <label class="file-label has-name">
+            <input class="file-input" type="file" name="resume" multiple id="uploadedFile" accept="image/*">
+            <span class="file-cta">
+          <span class="file-icon">
+            <i class="fas fa-upload"></i>
+          </span>
+          <span class="file-label has-text-centered">
+            Choose files…
+          </span>
+        </span>
+            <span class="file-name is-hidden"></span>
+        </label>
+    </div>
+</div>
+<h4 class="is-size-4 has-text-centered has-text-weight-bold has-text-grey-light mb-3">
+    Click on the image to delete
+    <br>
+    Reload the page to check that the files are loaded.</h4>
+<hr>
+<div class="container">
+    <div id="file-list" class="masonry"></div>
+</div>
+<script src="index.ts" defer async></script>
+</body>
+</html>
