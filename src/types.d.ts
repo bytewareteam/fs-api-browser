@@ -1,0 +1,1 @@
+export type CustomMapFiles = Map<string, FileEntry>

@@ -1,0 +1,38 @@
+.masonry {
+  column-count: 1;
+  column-gap: .5rem;
+  .item {
+    background-color: #eee;
+    display: inline-block;
+    margin: 0 0 1rem;
+    width: 100%;
+    padding: .25rem;
+    border: 1px solid rgba(black, .25);
+    border-radius: .25rem;
+    max-height: 250px;
+
+    img{
+      width: 100%;
+      border-right: .25rem;
+    }
+  }
+}
+@media only screen and (min-width: 1024px) {
+  .masonry {
+    column-count: 4;
+  }
+}
+
+/* Masonry on medium-sized screens */
+@media only screen and (max-width: 1023px) and (min-width: 768px) {
+  .masonry {
+    column-count: 3;
+  }
+}
+
+/* Masonry on small screens */
+@media only screen and (max-width: 767px) and (min-width: 540px) {
+  .masonry {
+    column-count: 2;
+  }
+}
